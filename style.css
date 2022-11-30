@@ -1,0 +1,40 @@
+.option .value{
+  font-size: 30px;
+  line-height: 45px;
+  margin-right: -48px;
+}
+.option .name{
+  font-size: 25px;
+
+  z-index: -2;
+  padding: 7px 0 7px 30px;
+}
+/* clases que se aplicará cuando haya acertada la opcion  */
+.option .name-correct{
+  background: yellowgreen;
+  color: #fff;
+}
+.option .correct-answer{
+  background: yellowgreen;
+  border: 1px solid;
+}
+/* clases que se aplicaran cuando se equivoque en la opcion elegida */
+.option .name-not-correct{
+  background: darkred;
+  color: #fff;
+}
+.option .value-not-correct{
+  background: darkred;
+  border: 1px solid;
+}
+
+/* PANTALLA final */
+#end-screen{
+  display: none;
+}
+#end-screen #correct{
+  background-color: chartreuse;
+}
+#end-screen #not-correct{
+  background-color: darkred;
+}

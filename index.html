@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Juego de Banderas</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+</head>
+<body class="m-5 bg-gray-900">
+  <h1 class="text-center mb-8 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-5xl text-white">Adivina las <span class="underline underline-offset-3 decoration-8 decoration-blue-600">banderas</span></h1>
+    <!-- Pantalla inicial -->
+  <div id="initial-screen" class="text-center">
+    <h4 class="my-4 font-normal text-gray-400">¿A qué pais pertenece la bandera?</h4>
+
+    <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-3.5 text-center text-center inline-flex items-center"
+      id='button-start-game'>COMENZAR A JUGAR
+        <svg aria-hidden="true" class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+    </button>
+  </div>
+
+    <!-- Pantalla juego -->
+    <div class="" id="screen-game">
+      <div><img class="mx-auto w-80 md:w-96 h-auto mb-6" src="" id="img-flag"></div>
+      <div class="flex flex-col items-center" id="options-countries"></div>
+    </div>
+    <!-- Pantalla final -->
+    <div id="end-screen" class="text-center">
+        <p class="text-white flex items-center justify-center mb-2">CORRECTAS: <span class="rounded-full ml-2 h-12 w-12 leading-10 text-center font-bold" id="correct">3</span></p>
+        <p class="text-white flex items-center justify-center mb-4">INCORRECTAS: <span class="rounded-full ml-2 h-12 w-12 leading-10 text-center font-bold" id="not-correct">2</span></p>
+        <button type="button"
+          class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-3.5 text-center text-center inline-flex items-center"
+          onclick="backToTop()">VOLVER AL INICIO
+          <svg aria-hidden="true" class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+        </button>
+    </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
